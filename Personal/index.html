@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<style>
+ 
+ 
+ body{ 
+  font-family: "Audiowide", sans-serif;
+  position: fixed;
+  background-image: url("assets/img/bg.jpg");
+  background-color: black;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1; 
+}
+
+.firstPage{
+    width: 60vw;
+    color: white;
+    padding-left: 0.1vw;
+}
+
+.name{
+    font-size: 50px;
+    margin-top: 30vh;
+    margin-left: 40px;
+   width: 5.5ch;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right:4px solid green ;
+   animation: typing 10s steps(20) infinite;
+}
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 5.5ch;
+  }
+}
+
+.btn{
+    width: 100vw;
+    background-color: transparent;
+    position: relative;
+}
+.layer{
+ background-color: green;
+ height: 100%;
+ width: 0%;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ /* z-index: -1; */
+ transition: 20s;
+}
+
+.firstPage:hover .layer{
+    width: 100%;
+}
+
+
+
+.name:hover{
+    
+    color:green;
+    text-shadow: 
+    0 0 0px green,
+    0 0 50px green,
+    0 0 75px green,
+    0 0 100px green; 
+    
+}
+
+.bio{
+    margin-top: 50px;
+}
+.bio:hover{
+    
+    color:green;
+    text-shadow: 
+    0 0 0px green,
+    0 0 50px green,
+    0 0 75px green,
+    0 0 100px green;   
+}
+
+
+.Navigator{
+    margin-top: 30px;
+    width: 50vw;
+    color: green;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: transparent;
+  
+   
+   }
+  
+   .Navigator li:hover{
+   
+     background-color: white; 
+    border-radius: 20px;
+   }
+
+.social a{
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    padding-left: 30px;
+    
+   }
+   
+
+</style>  
+
+</head>
+
+  <body>
+
+    <div class="firstPage">
+        
+        <div class="btn">
+            <span class="layer"></span>
+        </div>
+
+        <h1 class="name">Jawahar</h1>
+        <h4 class="bio">We know new problems are nothing but the possibilities of learning something new</h4>
+
+     <div class="Navigator">
+       
+        <li><a class="nav-link active" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="aboutpg.html">About</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+
+     </div>
+
+     <div class="social">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZWxvPfVpswcVgspLXjDWlDCDfQjcGXTXPSgnsSptDLNgvFQBtDtknrPmNZFCNZrQlPpfL" target="_blank"><i>__mail</i></a>
+        <a href="https://instagram.com/cyber__jawa?igshid=ZDdkNTZiNTM=" target="_blank"><i>__insta</i></a>
+        <a href="https://www.linkedin.com/in/jawahar-s-062295209"  target="_blank"><i>__likedin</i></a>
+      </div>
+     
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
